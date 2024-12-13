@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+    <link rel="stylesheet" href="styleticket.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="picture/images.png" alt="Railway Logo" class="logo" width="100px;">
+        <h1>Railway Ticket Booking</h1>
+    </div>
+
+    <div class="container">
+        <h2>Book Your Ticket</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" placeholder="Enter departure station" required>
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" placeholder="Enter destination station" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <select id="class" name="class">
+                    <option value="general">General</option>
+                    <option value="sleeper">Sleeper</option>
+                    <option value="ac">AC</option>
+                </select>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="flexible" name="flexible">
+                <label for="flexible">Flexible With Date</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="berth" name="berth">
+                <label for="berth">Train with Available Berth</label>
+            </div>
+            <button type="button" class="btn" onclick="submitBooking()">Search</button>
+        </form>
+    </div>
+
+
+
+    <script src="scriptticket.js"></script>
+</body>
+
+</html>
